@@ -1,0 +1,441 @@
+
+
+
+header {
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(51, 51, 51);
+}
+header li {
+    float: left;
+    position: relative;
+}
+
+.hLeft {
+    float: left;
+}
+
+.hright {
+    float: right;
+    position: relative;
+}
+
+header a{
+    /* 不要设置行内块！！！    */
+    display: block;
+    color: rgb(176, 176, 176);
+    margin: 0 19px 0 0;
+    font-size: 12px;
+}
+
+.hright li:last-child a{
+    margin: 0 0 0 -1px;
+}
+
+header span{
+    /* 不要设置行内块！！！    */
+    display: block;
+    color:  #424242;
+    padding: 0;
+    font-size: 12px;
+    position: absolute; 
+    top: 0;
+    right: 8px;
+    
+}
+
+header a:hover {
+    color: #FFFFFF;
+
+}
+
+
+.hDownQR {
+    display: none;
+    width: 110px;
+    height: 130px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.hLeft li:nth-last-child(2) a:hover .hDownQR {
+    display: block;
+    position: absolute;
+}
+
+.hShop {
+    display: none;
+    width: 250px;
+    height: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.hright li:nth-last-child(1){
+    margin-left: 8px;  
+    
+}
+
+.hright li:nth-last-child(1) a{
+    width: 120px;
+    text-align: center;
+    background-color:#424242;  
+
+}
+
+
+.hright li:nth-last-child(1) i{
+    margin-right: 3px;
+}
+
+.hright li:nth-last-child(1):hover a{
+    background-color: #FFFFFF;
+    color: #FF6700;
+}
+
+.hright li:nth-last-child(1):hover .hShop {
+    display: block;
+    position: absolute;
+    left: -65px;
+}
+
+/* ———————————————————————————————————————— */
+/* ———————————————————————————————————————— */
+/* 主体 */
+/* 导航 */
+nav {
+    width: 100%;
+    height: 100px;
+    /* line-height: 100px; */
+    /* background-color: #e9e9e9; */
+
+    /* margin-top: 300px; */
+    position: relative;
+    /* vertical-align: middle; */
+}
+
+.naL {
+    float: left;
+    width: 55px;
+    height: 55px;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+
+    left: 0;
+    /* right: 0; */
+
+    /* 
+    border: 1px solid;
+    background-color: bisque; */
+}
+
+.naL img {
+    /* float: left; */
+    width: 55px;
+    height: 55px;
+    background-color: #FF6700;
+    vertical-align: middle;
+}
+
+.naC {
+    float: left;
+
+    /* width: 55px; */
+    height: 55px;
+    line-height: 55px;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 200px;
+
+    border: 1px solid;
+}
+
+.naC li {
+    display: block;
+    float: left;
+    /* position: relative; */
+
+    padding-right: 20px;
+}
+
+.naC li:hover .naCMn {
+    display: block;
+}
+
+.naC a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.naC a:hover {
+    color: #FF6700;
+}
+
+.naCMn {
+    width: 1226px;
+    height: 200px;
+    z-index: 9999;
+    position: absolute;
+    top: 55px;
+    left: -200px;
+
+    display: none;
+    background-color: white;
+
+}
+
+
+
+
+
+
+
+
+
+
+.naR {
+    float: right;
+
+    width: 296px;
+    height: 50px;
+
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    /* border: 1px solid; */
+}
+
+.naR input {
+    width: 244px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+
+    outline: none;
+}
+
+.naR button {
+    width: 52px;
+    height: 50px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-left: 0;
+    float: left;
+
+    background-color: white;
+    color: #616161;
+}
+
+.naR button:hover {
+    color: white;
+    background-color: #FF6700;
+}
+
+.naR input:focus {
+    border: 1px solid #FF6700;
+}
+
+.naR input:focus+button {
+    border: 1px solid #FF6700;
+    border-left: none;
+}
+
+
+.naR button i {
+    font-size: 16px;
+
+}
+
+
+/* 主主 */
+.mBody {
+    height: 460px;
+    position: relative;
+    background-color: blanchedalmond;
+}
+
+.mbNav {
+    position: absolute;
+    width: 234px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+
+}
+
+.mbNav ul {
+    padding: 20px 0;
+}
+
+.mbNav a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.mbNav a:hover {
+    background-color: rgb(255, 103, 0);
+}
+
+.mbNav a {
+    position: relative;
+}
+
+.mbNavMn {
+    width: 9px;
+    height: 16px;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    margin: auto;
+
+
+    background-image: url(./pic/mi/icon-slides.png);
+    background-position: -151px -20px;
+    background-size: 600% 115%;
+    /* background-color: blueviolet; */
+
+}
+
+
+
+
+.mbImg {
+    /* width: 100%;
+    height: 460px; */
+    background-color: rgb(209, 255, 205);
+}
+
+.mbImg img {
+    height: 460px;
+    background-color: rgb(209, 255, 205);
+}
+
+.mbImg li {
+    position: absolute;
+}
+
+.mBodyImgBtn {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 999;
+}
+
+
+.mBodyImgCir {
+    width: 5px;
+    height: 5px;
+    float: left;
+
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: rgba(75, 73, 73, 0.6);
+    border: rgba(196, 196, 196, 0.6) 2px solid;
+}
+.mBodyImgCir:hover{
+    width: 5px;
+    height: 5px;
+    float: left;
+
+    margin-left: 5px;
+    border-radius: 50%;
+    background-color: rgba(236, 236, 236, 0.6);
+    border: rgba(75, 73, 73, 0.6) 2px solid;
+}
+
+
+.mBottom {
+    height: 170px;
+    margin: 15px auto;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+}
+
+.mBotSide {
+    width: 228px;
+    height: 168px;
+    padding: 2px 0 0 6px;
+    margin-right: 14px;
+
+
+    float: left;
+    background-color: #5F5750;
+}
+
+.mBotSide a::before {
+    content: '';
+
+    width: 64px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    position: absolute;
+    top: 0;
+    left: 6px;
+}
+
+.mBotSide a::after {
+    content: '';
+
+    width: 1px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+
+.mBotSide a {
+    width: 76px;
+    height: 84px;
+    line-height: 26px;
+
+    /* margin-right: 14px; */
+
+    position: relative;
+    display: table;
+    float: left;
+
+    text-align: center;
+    /* vertical-align: baseline; */
+
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+
+    /* background-color: rgb(192, 244, 96); */
+}
+
+.mBotSide a i {
+    margin: 20px 0 2px 0;
+}
+
+.mBotImg img {
+    width: 316px;
+    height: 170px;
+
+    float: left;
+
+    /* background-color: tomato; */
+}
+
+.mBotImg li:not(:nth-child(3)) img {
+    margin-right: 15px;
+}
